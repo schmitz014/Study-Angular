@@ -10,4 +10,10 @@
    </li>
  </ul>
  <h3>{{ animalDetails }}</h3>
+ <h1>Users:</h1>
+ <ul>
+  <li *ngFor="let user of users">
+   name: {{ user.name }} - email: {{ user.email }}
+  </li>
+ </ul>
 </div>
