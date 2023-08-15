@@ -18,11 +18,6 @@ export class ListRenderComponent {
     age: 5,
   }
 
-  user: User = {
-    name: "admin",
-    email: "admin@"
-  }
-
   animalDetails = ''
 
   showAge(animal: Animal): void {

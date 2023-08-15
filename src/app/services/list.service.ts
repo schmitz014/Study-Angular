@@ -19,4 +19,8 @@ export class ListService {
   getAllUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl)
   }
+
+  getItem(id: number): Observable<User>{
+    return this.http.get<User>(`${this.apiUrl}/${id}`)
+  }
 }
